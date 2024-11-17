@@ -17,16 +17,16 @@ class Petroleum:
     def setPetroleumProductCurrentMonthPrice(self,current_month_price):
           self.__current_month_price=current_month_price
     def getChangePercentPrice(self):
-          return ( self.__last_month_price-self.__current_month_price)/100
+          return  round(self.__last_month_price-self.__current_month_price/100,3)
     
 
      #def main():
 petroleum1 = Petroleum('Gasoline',3.5,3.32)
-print(petroleum1.getPetroleumProductName())
-print(petroleum1.getPetroleumProductLastMonth_Price())
-print(petroleum1.getPetroleumProductCurrentMonthPrice())
-print(petroleum1.getChangePercentPrice())
-print(petroleum1.getPetroleumProductGrade())
+print("Product Name is ",petroleum1.getPetroleumProductName())
+print("Petroleum Last Month Price is ",petroleum1.getPetroleumProductLastMonth_Price())
+print("Petroleum current month price is ",petroleum1.getPetroleumProductCurrentMonthPrice())
+print("Petroleum change in price is ",petroleum1.getChangePercentPrice())
+print("Petroleum Product Grade is ",petroleum1.getPetroleumProductGrade())
 
 
 
